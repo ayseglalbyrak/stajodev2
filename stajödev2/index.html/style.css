@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-bottom: 60px; /* footer için boşluk bırak */
+}
+
+/* Header */
+header {
+  background: #c29393;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#welcome {
+  font-size: 32px;      /* daha büyük */
+  font-weight: bold;
+  color: #fff;          /* arka plan koyuysa kontrast için beyaz */
+  margin: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;   /* dikeyde ortala */
+  gap: 20px;
+  background: #b08b8b;
+  padding: 20px;
+}
+
+.logo { width:200px; 
+  height:auto;
+   display:block; }
+#welcome { margin:0;
+   font-size:24px;
+    color:hsl(0, 0%, 97%); }
+
+/* Haber */
+.haber {
+  padding: 20px;
+}
+.haber-icerik {
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.podcast-resim {
+  
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+/* Resim Kutusu */
+.butonlar {
+  padding: 20px;
+  text-align: center;
+  display: inline;
+}
+.resim-kutusu {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start; /* sola hizala */
+  overflow-x: auto;            /* sığmazsa yatay kaydırma */
+  white-space: nowrap;         /* alta kaymasını engelle */
+  padding: 10px;
+}
+
+.resim-kutusu img {
+  width: 200px;
+  height: 200px;              /* sabit yükseklik */
+  object-fit: cover;          /* kırp ama orantıyı koru */
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  flex-shrink: 0;             /* daralmayı engelle */
+}
+.resimler img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+
+
+/* Footer sabit */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
